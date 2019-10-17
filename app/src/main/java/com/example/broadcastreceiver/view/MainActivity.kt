@@ -71,7 +71,6 @@ class MainActivity : AppCompatActivity() {
                 fragmentB.isBatteryCharging(msg.batteryChraging.toString())
             else if(msg?.myAction != null)
                 fragmentC.getMyAction(msg?.myAction.toString())
-
         }
     }
 

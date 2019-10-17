@@ -41,11 +41,16 @@ class Receiver : BroadcastReceiver() {
                     received.usbDetached = "true"
                 }
             } else if (action.equals(BatteryManager.ACTION_CHARGING)) {
-                if(intent?.extras?.get("state") == true){
+                val status = intent?.getIntExtra(BatteryManager.EXTRA_STATUS, -1)
+                Log.d("TAG_X", status.toString())
+
+                if(status != -1){
                     received.batteryChraging = "true"
                 } else {
                     received.batteryChraging = "false"
                 }
+            } else if(action.equals("com.example.broadcastreceiver.action")){
+                received.myAction = intent?.getStringExtra("data")
             }
 
             return received
