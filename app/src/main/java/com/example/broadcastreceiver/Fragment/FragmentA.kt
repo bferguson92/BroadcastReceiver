@@ -22,9 +22,14 @@ class FragmentA: Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_a_layout, container, false)
     }
-    s
+
 
     fun getAirplaneMode(isAirplaneModeOn: String){
         text_view.text = isAirplaneModeOn
+    }
+
+    fun getBluetoothState(isBluetoothOn: String){
+        text_view_bluetooth.text = isBluetoothOn
+
     }
 }

@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/text_view"
+        android:id="@+id/text_view_action"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -19,6 +19,6 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/text_view"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_view_action"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

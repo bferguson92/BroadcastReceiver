@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/text_view"
+        android:id="@+id/text_view_usb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -15,10 +15,10 @@
         app:layout_constraintLeft_toLeftOf="parent"/>
 
     <TextView
-        android:id="@+id/text_view_bluetooth"
+        android:id="@+id/text_view_battery"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/text_view"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_view_usb"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

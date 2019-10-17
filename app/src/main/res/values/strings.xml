@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BroadcastReceiver</string>
     <string name="send_broadcast">SEND BROADCAST</string>
+    <string name="airplane_mode">Airplane Mode:</string>
 </resources>
